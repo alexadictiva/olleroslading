@@ -1,0 +1,27 @@
+.intro-container {
+  background-image: url("./../assets/images/bgIntro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  @include desktop {
+    height: 100vh;
+  }
+  .overlay {
+    background: $overlay;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      text-align: center;
+      img {
+        width: 170px;
+        @include desktop {
+          width: 360px;
+        }
+      }
+    }
+  }
+}

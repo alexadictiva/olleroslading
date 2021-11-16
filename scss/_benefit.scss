@@ -1,0 +1,65 @@
+.benefit-container {
+  .benefit-content {
+    @include padding;
+
+    background: $color4;
+    color: $color3;
+    padding-bottom: 0;
+    @include desktop {
+      padding: 60px;
+      display: flex;
+      gap: 35px;
+      align-items: center;
+    }
+    .benefit-description {
+      max-width: 550px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      @include desktop {
+        width: 50%;
+        padding: 0;
+      }
+      h3 {
+        font: $font1;
+        @include desktop {
+          font: $font11;
+        }
+      }
+      p {
+        font: $font33;
+
+        @include desktop {
+          font: $font12;
+        }
+      }
+      div {
+        img {
+          width: 20px;
+          @include desktop {
+            width: 30px;
+          }
+        }
+      }
+      div {
+        margin: 20px 0 40px;
+        text-align: center;
+      }
+    }
+
+    .benefit-image {
+      text-align: center;
+      @include desktop {
+        padding-left: 35px;
+        width: 50%;
+        height: 519px;
+      }
+      img {
+        @include desktop {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

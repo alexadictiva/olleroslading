@@ -1,0 +1,59 @@
+/* :root {
+  font-size: 62.5%;
+} */
+$fontBase: "Helvetica Neue Roman Std"; /*Normal*/
+$fontBase1: "Helvetica Neue LT Std"; /*Light*/
+$fontBase2: "Helvetica Neue Medium Std"; /*Bold*/
+$fontBase3: "Helvetica Neue Bd Std"; /*Hard*/
+
+$white: #ffffff;
+$overlay: #d4dace75;
+$black: #000000;
+$color1: #d4dace;
+$color2: #cfd5ca;
+$color4: #384a51;
+$color3: #d9e0d4;
+$color5: #abb5a0;
+$fontColor2: #384a51;
+$fontColor1: #d9e0d4;
+$color6: #f4f6f2;
+
+$fontBody: normal 1.5rem/2.3rem $fontBase;
+$fontBodyBold: bold 1.5rem/2.2rem $fontBase;
+$font1: normal 1.9rem/2.2rem $fontBase2;
+$font2: normal 1.5rem/2.2rem $fontBase1;
+$font31: normal 1.9rem/2.2rem $fontBase2;
+$font32: normal 1.6rem/2rem $fontBase1;
+$font4: normal 1.5rem/2rem $fontBase1;
+$font33: normal 1.6rem/1.9rem $fontBase1;
+$font34: normal 1.5rem/2rem $fontBase3;
+$font35: normal 1.6rem/3rem $fontBase1;
+$font36: normal 1.6rem/2.7rem $fontBase1;
+$font37: normal 1.6rem/1.8rem $fontBase1;
+$font38: normal 1.55rem/2rem $fontBase1;
+$font39: normal 1.6rem/1.8rem $fontBase1;
+$font40: normal 1.2rem/1.7rem $fontBase;
+$font3: 300 1.4rem/2.2rem $fontBase;
+$font5: normal 1.9rem/2rem $fontBase;
+
+$font11: normal 2.4rem/2.8rem $fontBase;
+$font12: normal 2.1rem/2.7rem $fontBase1;
+$font13: normal 1.4rem/2.7rem $fontBase1;
+$font14: normal 2.1rem/2.8rem $fontBase2;
+$font15: normal 2rem/22rem $fontBase1;
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}

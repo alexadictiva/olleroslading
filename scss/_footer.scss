@@ -1,0 +1,65 @@
+footer {
+  position: relative;
+  .footer-content {
+    @include padding;
+    position: relative;
+    text-align: center;
+    max-width: calc(94%);
+    @include desktop {
+      margin: auto;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    .logo-container {
+      margin-bottom: 10px;
+      @include desktop {
+        margin-bottom: 0;
+      }
+      a {
+        img {
+          width: 60px;
+        }
+      }
+    }
+    .social-container {
+      @include desktop {
+        display: flex;
+        gap: 10px;
+        width: 50%;
+      }
+      a {
+        font: $font40;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        color: $fontColor2;
+        margin-bottom: 10px;
+        @include desktop {
+          font: $font15;
+        }
+        img {
+          width: 25px;
+        }
+        @include desktop {
+          width: 50%;
+          font: $font5;
+        }
+      }
+    }
+  }
+  .remo-container {
+    a {
+      position: absolute;
+      bottom: 50px;
+      right: 20px;
+      @include desktop {
+        bottom: 35px;
+      }
+      img {
+        width: 8px;
+      }
+    }
+  }
+}

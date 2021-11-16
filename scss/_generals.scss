@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color6;
+  font: $fontBody;
+  overflow-x: hidden;
+  letter-spacing: 1.5px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+.enter-hidden {
+  @include desktop {
+    display: none;
+  }
+}

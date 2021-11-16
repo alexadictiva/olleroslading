@@ -1,0 +1,46 @@
+.move-container {
+  @include padding;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  background: $color3;
+  color: $white;
+  @include desktop {
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+  }
+  .move-description {
+    color: $fontColor2;
+    max-width: 550px;
+    @include desktop {
+      width: 45%;
+      padding: 0 50px 0 20px;
+      order: 2;
+    }
+
+    h3 {
+      margin-bottom: 60px;
+
+      font: $font1;
+      @include desktop {
+        font: $font11;
+      }
+    }
+    div {
+      margin: 40px 0;
+      text-align: center;
+    }
+  }
+  .move-image {
+    text-align: center;
+    @include desktop {
+      width: 55%;
+      order: 1;
+    }
+    img {
+      @include desktop {
+        width: 85%;
+      }
+    }
+  }
+}
