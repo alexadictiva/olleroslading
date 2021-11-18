@@ -26,29 +26,19 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // Google maps
-function initMap() {
-  const zoom = 17;
 
+function initMap() {
   const src = "../assets/icons/marker.svg";
-  const lat1 = "-34.581204563813735";
-  const lng1 = "-58.45015737324518";
-  const lat2 = "-34.58127616381696";
-  const lng2 = "-58.45224548532422";
-  const url = "https://goo.gl/maps/QJ6FPPMYhuJdxL6u5";
-  const center = {
-    lat: parseFloat(lat1),
-    lng: parseFloat(lng1),
+  let zoom = 17;
+  let center = {
+    nombre: "olleros 3530",
+    lat: -34.58128058046526,
+    lng: -58.452245485820136,
   };
-  const center2 = {
-    lat2: parseFloat(lat2),
-    lng2: parseFloat(lng2),
-  };
-  const bounds = new google.maps.LatLngBounds();
-  const map = new google.maps.Map(document.getElementById("map"), {
+  let map = new google.maps.Map(document.getElementById("map"), {
     styles,
     zoom,
     center,
-    center2,
     gestureHandling: "cooperative",
     disableDefaultUI: true,
     zoomControl: true,
@@ -58,36 +48,27 @@ function initMap() {
     rotateControl: false,
     fullscreenControl: true,
   });
+  let lugares = [
+    {
+      nombre: "olleros 3530",
+      lat: -34.58128058046526,
+      lng: -58.452245485820136,
+    },
+    {
+      nombre: "alvares tomas 444",
+      lat: -34.581208980465405,
+      lng: -58.45179888581999,
+    },
+  ];
 
-  const latLng = new google.maps.LatLng(lat1, lng1);
-  const marker = new google.maps.Marker({
-    position: latLng,
-    map,
-    icon: src,
-  });
-
-  const latLng2 = new google.maps.LatLng(lat2, lng2);
-  const marker2 = new google.maps.Marker({
-    position: latLng2,
-    map,
-    icon: src,
-  });
-
-  google.maps.event.addListener(marker, "click", function () {
-    window.open(url);
-  });
-  google.maps.event.addListener(marker2, "click", function () {
-    window.open(url);
-  });
-
-  bounds.extend(latLng);
-  bounds.extend(latLng2);
-
-  // Marker to fit zoom
-  map.panTo(center);
-  map.panTo(center2);
+  for (i = 0; i < lugares.length; i++) {
+    let marker = new google.maps.Marker({
+      position: lugares[i],
+      map,
+      icon: src,
+    });
+  }
 }
-
 const styles = [
   {
     featureType: "all",
