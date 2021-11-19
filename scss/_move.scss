@@ -30,6 +30,9 @@
         @include desktop {
           font: $font11;
         }
+        @include biggest-desktop {
+          margin-left: -100px;
+        }
       }
       div {
         margin: 40px 0;

@@ -800,6 +800,12 @@ header .btn-container a {
   }
 }
 
+@media (min-width: 1600px) {
+  .move-container .move-content .move-description h3 {
+    margin-left: -100px;
+  }
+}
+
 .move-container .move-content .move-description div {
   margin: 40px 0;
   text-align: center;
