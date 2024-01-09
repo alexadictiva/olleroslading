@@ -2,4 +2,4 @@ pagina oficial:
 https://www.gardaolleros.com.ar/
 
 repositorio de desarrollo:
-https://www.gardaolleros.com.ar/
+https://alexadictiva.github.io/olleroslading/
